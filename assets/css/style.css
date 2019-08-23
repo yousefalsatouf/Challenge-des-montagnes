@@ -9,8 +9,6 @@
     display: flex;
     flex-flow: column-reverse wrap;
   }
-  section {
-  }
   .style1 div {
     min-width: 100%;
     text-align: center;
@@ -22,7 +20,8 @@
   .banner.style1 .content {
     padding: 2rem;
   }
-  .banner.style1 .content p.major {
+  .banner.style1 .content p.major,
+  .spotlight.style1 .content {
     font-size: 75%;
   }
   .content h1 {
@@ -30,5 +29,19 @@
   }
   .button.wide {
     min-width: 17rem;
+  }
+  .spotlight.style1 .content {
+    width: 100%;
+    margin: 0rem 1.5rem 0rem -1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .spotlight.style1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }
