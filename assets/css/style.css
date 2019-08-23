@@ -1,0 +1,34 @@
+@media only screen and (max-width: 576px) {
+  body {
+  }
+  #wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #wrapper section {
+    display: flex;
+    flex-flow: column-reverse wrap;
+  }
+  section {
+  }
+  .style1 div {
+    min-width: 100%;
+    text-align: center;
+  }
+  #wrapper section div:last-child {
+    height: 20rem;
+    width: 100%;
+  }
+  .banner.style1 .content {
+    padding: 2rem;
+  }
+  .banner.style1 .content p.major {
+    font-size: 75%;
+  }
+  .content h1 {
+    font-size: 160%;
+  }
+  .button.wide {
+    min-width: 17rem;
+  }
+}
