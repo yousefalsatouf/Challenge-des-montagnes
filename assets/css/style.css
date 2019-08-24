@@ -1,0 +1,123 @@
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    body #wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    body #wrapper section {
+        display: flex;
+        flex-flow: column-reverse wrap;
+        padding: 0%;
+        margin: 0%;
+        width: 100%
+    }
+    body #wrapper section div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0rem;
+        padding: 3rem;
+        text-align: center;
+        width: 100%;
+        height: 22rem;
+    }
+    .banner.style1 .content {
+        height: 5rem;
+        width: 50%;
+    }
+    p.major {
+        font-size: 0.80rem;
+        margin: 0rem
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin: 0%;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        margin-block-start: 0em;
+        margin-block-end: 0em
+    }
+    .button.wide {
+        font-size: 0.5rem
+    }
+    .spotlight.style1 {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 75%
+    }
+    .spotlight.style1 .image {
+        height: 100%;
+        max-width: 50%;
+        padding: 0%
+    }
+    body #wrapper section:nth-child(2),
+    body #wrapper section:nth-child(3),
+    body #wrapper section:nth-child(4) {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: stretch
+    }
+    body #wrapper section:nth-child(3) {
+        flex-flow: row nowrap;
+    }
+    body #wrapper section:nth-child(2) .content,
+    body #wrapper section:nth-child(3) .content,
+    body #wrapper section:nth-child(4) .content,
+    body #wrapper section:nth-child(2) .image,
+    body #wrapper section:nth-child(3) .image,
+    body #wrapper section:nth-child(4) .image {
+        padding: 2rem 1rem;
+        margin: 0%;
+        flex-grow: 0.5;
+        flex-shrink: 0.5
+    }
+    body #wrapper section:nth-child(5),
+    body #wrapper section:last-of-type,
+    footer {
+        display: none;
+    }
+    body #wrapper section:nth-child(6) {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        box-sizing: content-box;
+    }
+    body #wrapper section:nth-child(6) .inner {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0rem;
+        padding: 0%
+    }
+    body #wrapper section:nth-child(6) .inner .items.style1 {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 15rem;
+    }
+    body #wrapper section:nth-child(6) .inner .items.style1 section {
+        display: flex;
+        flex: 1 0 40%;
+        padding: 0.5rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        font-size: 75%;
+        padding: 0.5rem;
+        margin: 0 0.5
+    }
+    body #wrapper section:nth-child(6) .inner .items.style1 section div div {
+        height: 70rem;
+    }
+    .items.style1.medium section:nth-child(3),
+    .items.style1.medium section:nth-child(9) {
+        border-top-width: 1px;
+        border-right-width: 1px;
+    }
+    .items.style1.medium section:nth-child(3),
+    .items.style1.medium section:nth-child(5),
+    .items.style1.medium section:nth-child(9) .items.style1.medium section:nth-child(11) {
+        border-left-width: 0px;
+    }
+}
