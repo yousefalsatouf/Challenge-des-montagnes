@@ -1,6 +1,6 @@
 /*Tablette Mode starts From here ...*/
 
-@media only screen and (min-width: 576px) and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 768px) {
     body #wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -36,6 +36,11 @@
     }
     h2 {
         font-size: 1.5rem;
+        letter-spacing: 0rem;
+        padding-top: 1rem;
+        margin-bottom: 0rem;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
     }
     p {
         margin-block-start: 0em;
@@ -105,12 +110,9 @@
         flex: 1 0 40%;
         padding: 0.5rem;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-        font-size: 75%;
+        font-size: 80%;
         padding: 0.5rem;
         margin: 0 0.5
-    }
-    body #wrapper section:nth-child(6) .inner .items.style1 section div div {
-        height: 70rem;
     }
     .items.style1.medium section:nth-child(3),
     .items.style1.medium section:nth-child(9) {
@@ -122,7 +124,66 @@
     .items.style1.medium section:nth-child(9) .items.style1.medium section:nth-child(11) {
         border-left-width: 0px;
     }
+    body #wrapper section:nth-child(6) .inner .items.style1 section div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 16rem
+    }
+    body #wrapper section:nth-child(6) .inner .items.style1 section div * {
+        flex-grow: 1;
+        width: 100%;
+        margin: 0rem;
+        padding: 0rem;
+        height: 5rem;
+    }
 }
 
 
 /* Tablette mode finished here ...*/
+
+@media only screen and (max-width: 576px) {
+    body {}
+    #wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #wrapper section {
+        display: flex;
+        flex-flow: column-reverse wrap;
+    }
+    .style1 div {
+        min-width: 100%;
+        text-align: center;
+    }
+    #wrapper section div:last-child {
+        height: 20rem;
+        width: 100%;
+    }
+    .banner.style1 .content {
+        padding: 2rem;
+    }
+    .banner.style1 .content p.major,
+    .spotlight.style1 .content {
+        font-size: 75%;
+    }
+    .content h1 {
+        font-size: 160%;
+    }
+    .button.wide {
+        min-width: 17rem;
+    }
+    .spotlight.style1 .content {
+        width: 100%;
+        margin: 0rem 1.5rem 0rem -1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem;
+    }
+    .spotlight.style1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
