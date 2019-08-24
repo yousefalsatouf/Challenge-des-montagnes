@@ -1,3 +1,5 @@
+/*Tablette Mode starts From here ...*/
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
     body #wrapper {
         display: flex;
@@ -121,3 +123,6 @@
         border-left-width: 0px;
     }
 }
+
+
+/* Tablette mode finished here ...*/
